@@ -16,15 +16,16 @@ namespace DesafioPOO.Models
             IMEI = imei;
             Memoria = memoria;
         }
-
-        public void Ligar()
+        
+        // Modificação mdlpontual: incrementar métodos de ligação para mostrar números de ligação
+        public void Ligar(string numeroChamando)
         {
-            Console.WriteLine("Ligando...");
+            Console.WriteLine($"Ligando para {numeroChamando}");
         }
 
-        public void ReceberLigacao()
+        public void ReceberLigacao(string numeroLigando)
         {
-            Console.WriteLine("Recebendo ligação...");
+            Console.WriteLine($"Recebendo ligação de {numeroLigando}");
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
